@@ -1,0 +1,23 @@
+$ORIGIN .
+$TTL 86400	; 1 day
+batagiev.net		IN SOA	batagiev.net. server.batagiev.net. (
+				2022111407 ; serial
+				86400      ; refresh (1 day)
+				3600       ; retry (1 hour)
+				604800     ; expire (1 week)
+				10800      ; minimum (3 hours)
+				)
+			NS	batagiev.net.
+			A	192.168.1.1
+			MX 10	mail.batagiev.net.
+$ORIGIN batagiev.net.
+$TTL 300	; 5 minutes
+client			A	192.168.1.30
+			TXT	"311636d9bcc67e6c5a59685d1a62e81863"
+$ORIGIN batagiev.net.
+$TTL 86400	; 1 day
+dhcp			A	192.168.1.1
+ns			A	192.168.1.1
+server			A	192.168.1.1
+www			A	192.168.1.1
+mail			A	192.168.1.1
